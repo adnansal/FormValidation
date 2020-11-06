@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  height: 40px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.f{
+    width: 30%;
+    padding: 2%;
+    word-wrap: break-word;
+    }
+
+.rf{
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+.validation{
+    border: solid 1px red;
+}
+
+span{
+    padding: 2%;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<form method="GET" id="myform" style="max-width:700px;margin:auto"  action="#">
+  <h2>Register Form</h2>
+  <div class="rf"></div>
+  <div id="usd"class="input-container">
+    <label class="f" for="usrnm" >Full Name</label>
+    <i class="fa fa-user icon"></i>
+    <input id="usrnm" class="input-field" type="text" placeholder="Full Name" name="usrnm">
+  </div>
+
+  <div class="input-container">
+    <label class="f" for="add1">Address Line 1</label>
+    <i class="fa fa-address-book icon"></i>
+    <input id="add1" class="input-field" type="text" placeholder="Address" name="add1">
+  </div>
+
+  <div class="input-container">
+    <label class="f" for="add2">Address Line 2</label>
+    <i class="fa fa-address-book icon"></i>
+    <input id="add2" class="input-field" type="text" placeholder="Address" name="add2">
+  </div>
+
+  <div class="input-container">
+    <label class="f" for="city">City</label>
+    <i class="fa fa-building icon"></i>
+    <input id="city" class="input-field" type="text" placeholder="City" name="city">
+  </div>
+
+  <div class="input-container">
+    <label class="f" for="spr">State/Region</label>
+    <i class="fa fa-map-marker icon"></i>
+    <input id="spr" class="input-field" type="text" placeholder="State/Region" name="spr">
+  </div>
+
+  <div class="input-container">
+    <label class="f" for="pcz">Postal Code/ZIP</label>
+    <i class="fa fa-map-marker icon"></i>
+    <input id="pcz" class="input-field" type="text" placeholder="Postal Code/ZIP" name="pcz">
+  </div>
+
+  <div class="input-container">
+    <label class="f" for="country">Country</label>
+    <i class="fa fa-map-o icon"></i>
+    <input id="country" class="input-field" type="text" placeholder="Country" name="country">
+  </div>
+
+  <div class="input-container">
+    <label class="f" for="email">Email</label>
+    <i class="fa fa-user icon"></i>
+    <input id="email" class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+  
+  <div class="input-container">
+    <label class="f" for="phone">Phone</label>
+    <i class="fa fa-user icon"></i>
+    <input id="phone" class="input-field" type="text" placeholder="Phone" name="phone">
+  </div>
+  <div style="text-align: center;">
+    <input id="sub" type="submit" class="btn" value="Register">
+  </div>
+   
+</form>
+
+<script defer src="/script.js"></script>
+</body>
+</html>
